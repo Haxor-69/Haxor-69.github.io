@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="icon" href="/extra/favicon.jpg" type="image/gif">
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<title>Cyber Sec - Articals</title>
+    	<link href="/extra/hacker.css" rel="stylesheet">
+
+    	<style>
+    	.tall-row {
+    	    margin-top: 40px;
+    	}
+    	.modal {
+        	position: relative;
+        	top: auto;
+        	right: auto;
+        	left: auto;
+        	bottom: auto;
+        	z-index: 1;
+        	display: block;
+    	}
+    	</style>	
+	</head>
+    <body>
+
+<!--- Java Script --->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+        <!-- Github stars script -->
+        <script>
+        $(document).ready(function(){
+            $.getJSON("https://api.github.com/repos/brobin/hacker-bootstrap", function(data){
+                var stars = data['stargazers_count'];
+                $("#stars").text(stars + " stars");
+            });
+        });
+        </script>
+
+<!--- Java Script --->
+
+<!---Navigation Bar--->
+    
+    
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"  aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand">Th3unkn0n Cyber Sec</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/extra/contact.html" target="_blank">Contact Us</a></li>
+                    <li><a href="/extra/donate.html" target="_blank">Donate Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<!---Video Tutorials--->
+        <div class="container">
+        <div class="row tall-row">
+            <div class="col-lg-12">
+                <h1>All Articals</h1>
+                <hr>  
+                <div class="row">
+                <div class="col-lg-12"> <!---Coloumn Container Start--->
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-body"><a href="fileSystem.html"><img src="/image/linux4hacker.jpg" style="width:317px;height:160px;"></a></div>
+                            <div class="panel-footer"><center>Linux For Hackers - 1<br>( File System )</center></div>
+                        </div>
+
+                        <div class="panel panel-primary">
+                            <div class="panel-body"><a href=""><img src="/image/linux4hacker.jpg" style="width:317px;height:160px;"></a></div>
+                            <div class="panel-footer"><center>Linux For Hackers - 2<br>( Basic Linux / Termux CMD )</center></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-body"><a href=""><img src="/image/linux4hacker.jpg" style="width:317px;height:160px;"></a></div>
+                            <div class="panel-footer"><center>Linux For Hackers - 3</center></div>
+                        </div>
+
+                        <div class="panel panel-primary">
+                            <div class="panel-body"><a href=""><img src="/image/linux4hacker.jpg" style="width:317px;height:160px;"></a></div>
+                            <div class="panel-footer"><center>Linux For Hackers - 4</center></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-body"><a href=""><img src="/image/linux4hacker.jpg" style="width:317px;height:160px;"></a></div>
+                            <div class="panel-footer"><center>Linux For Hackers - 5</center></div>
+                        </div>
+
+                        <div class="panel panel-primary">
+                            <div class="panel-body"><a href=""><img src="/image/linux4hacker.jpg" style="width:317px;height:160px;"></a></div>
+                            <div class="panel-footer"><center>Linux For Hackers - 6</center></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div align="center"> <!---Class = active / disabled--->
+                    <ul class="pagination pagination-lg">
+                        <li class="disabled"><a href="index.html#">«</a></li>
+                        <li><a href="index.html#">1</a></li>
+                        <li><a href="index.html#">2</a></li>
+                        <li><a href="index.html#">3</a></li>
+                        <li><a href="index.html#">4</a></li>
+                        <li class="disabled"><a href="index.html#">»</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
